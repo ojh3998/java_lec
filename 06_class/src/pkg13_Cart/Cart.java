@@ -54,6 +54,21 @@ public class Cart {
     
     Product removedProduct = products[removeIdx];
     
+    /*
+    Cart 에 담긴 물건의 갯수(idx)에 따라 복사해야 할 요소의 갯수가 달라진다.
+    
+    idx 가 5 라고 가정하면 removeIdx 에 따라 복사해야 할 요소의 갯수는 아래와 같다.
+    
+    removeIdx     복사해야 할 요소의 갯수
+    0             4
+    1             3
+    2             2
+    3             1
+    4             0
+    --------------------------------------
+                  idx - 1 - removeIdx
+  */
+    
     System.arraycopy(products, removeIdx + 1, products, removeIdx, idx - 1 - removeIdx);
     products[--idx] = null;
     
