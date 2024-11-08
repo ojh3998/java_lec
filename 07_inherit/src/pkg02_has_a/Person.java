@@ -1,15 +1,22 @@
-package pkg01_is_a;
+package pkg02_has_a;
 
 /*
 ┌--------------┐
-│    Person    │ 슈퍼 클래스 (부모 클래스)
+│      Pen     │ 슈퍼 클래스
+│--------------│
+│   drawing()  │
+└--------------┘
+        ▲
+        │
+┌--------------┐
+│    Person    │ 서브 클래스
 │--------------│
 │     eat()    │
 │    sleep()   │
 └--------------┘
 */
 
-public class Person {
+public class Person extends Pen {
   
   public void eat() {
     System.out.println("eat");
@@ -18,5 +25,8 @@ public class Person {
   public void sleep() {  
     System.out.println("sleep");
   }
+  
+  
 
 }
+ 
