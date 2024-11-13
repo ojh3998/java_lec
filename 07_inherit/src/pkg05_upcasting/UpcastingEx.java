@@ -1,6 +1,5 @@
 package pkg05_upcasting;
 
-import java.util.Arrays;
 
 public class UpcastingEx {
 

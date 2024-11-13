@@ -10,10 +10,10 @@ public class BusEx {
     bus.on(new Man("신순후"));
     bus.on(new Man("조동수"));
     bus.on(new Man("정승현"));
-    bus.on(new Man("김민정"));
+    bus.on(new Woman("김민정"));
     bus.on(new Man("박한비"));
     bus.on(new Man("이태현"));
-    bus.on(new Man("장서린"));
+    bus.on(new Woman("장서린"));
     
     bus.info();
     
