@@ -7,13 +7,12 @@ import java.util.*;   // 자바 유틸의 모든 것
 // import java.util.List;
 
 public class ArrayListEX {
+  
  /**
   * Mutable 객체
   * 저장된 요소의 갯수를 변경할 수 있다. 
   * 크기는 자동으로 조정된다. 기본 10개 지만, 더 추가하면 자동으로 조정해줌.
   */
-  
-  
   
   public static void a() {
     
