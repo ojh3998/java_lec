@@ -20,17 +20,17 @@ import java.io.OutputStream;
 public class OutputEx {
 
   public static void k() {
-    File direct = new File("\\storage");
+    File direct = new File("\\storage");    // c드라이브에 storage라는 이름의 폴더를 만드는 작업
     if(!direct.exists()) {
       direct.mkdirs();
     }
-    File file = new File(direct, "k.txt");
+    
+    File file = new File(direct, "k.txt");    // 만든 폴더 안에 파일을 생성할 준비를 작업
     
   
     
-    try (BufferedOutputStream a = new BufferedOutputStream(new FileOutputStream(file));) {
+    try (BufferedOutputStream a = new BufferedOutputStream(new FileOutputStream(file));) { // 여기가 파일 생성 시점 
     
-      
       byte[] c = "hello, my name is kim".getBytes();
       a.write(c);
       
@@ -38,6 +38,7 @@ public class OutputEx {
       e.printStackTrace();
     } 
   }
+      
       
     
     
@@ -247,6 +248,8 @@ public class OutputEx {
       out = new ObjectOutputStream(new FileOutputStream(file));
       
       out.writeObject(new Car("Phorse", "911"));     // 직렬화가 가능한 인스턴스를 출력할 수 있다. 이 상태에서는 직렬화 불가능 -> car 클래스에서 해결해야함
+      out.writeObject(new Car("Mercedes-Benz", "e450d"));     
+      out.writeObject(new Car("Bmw", "520i"));    
       
       
       
@@ -266,7 +269,7 @@ public class OutputEx {
     
     
   public static void main(String[] args) {
-    k();
+    e();
     
   }
   
